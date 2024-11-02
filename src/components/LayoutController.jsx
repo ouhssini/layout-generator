@@ -24,12 +24,16 @@ const LayoutController = () => {
   const step = () => {
     if (gap < 4) {
       return 0.5;
-    } else if (gap < 12) {
-      return 1;
-    } else if (gap < 16) {
-      return 2;
+    } else if (gap >= 80) {
+      return 16;
+    } else if (gap >= 64) {
+      return 8;
     } else if (gap >= 16) {
       return 4;
+    } else if (gap < 16 && gap >= 12) {
+      return 2;
+    } else if (gap < 12) {
+      return 1;
     }
   };
 
@@ -200,7 +204,7 @@ const LayoutController = () => {
             onChange={(e) => setAlignItems(e.target.value)}
             className="border border-gray-300  rounded-lg px-3 py-1 w-24 mt-1 text-center focus:border-purple-500 focus:ring focus:ring-purple-200 transition-all"
           >
-            <option value="">Start</option>
+            <option value="items-start">Start</option>
             <option value="items-center">Center</option>
             <option value="items-end">End</option>
             <option value="items-stretch">Stretch</option>

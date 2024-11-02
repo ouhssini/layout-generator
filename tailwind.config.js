@@ -2,11 +2,11 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}", // Make sure your paths are correct
+    "./src/**/*.{js,jsx,ts,tsx}", 
   ],
   safelist: [
     {
-      pattern: /^grid-cols-\d+$/, // This will safelist grid-cols-1 to grid-cols-12,
+      pattern: /^grid-cols-\d+$/, 
     },
     {
       pattern: /^gap-\d+(\.\d+)?$/,
