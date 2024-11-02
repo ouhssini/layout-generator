@@ -167,9 +167,9 @@ const LayoutController = () => {
                 onChange={(e) => setWrap(e.target.value)}
                 className="border  border-gray-300 rounded-lg px-3 py-1 w-24 mt-1 text-center focus:border-purple-500 focus:ring focus:ring-purple-200 transition-all"
               >
+                <option value="">No Wrap</option>
                 <option value="flex-wrap">Wrap</option>
                 <option value="flex-wrap-reverse">Wrap Reverse</option>
-                <option value="">No Wrap</option>
               </select>
             </div>
           </>

@@ -5,7 +5,7 @@ const AppContext = createContext(null);
 const AppProvider = ({ children }) => {
   const [mode, setMode] = useState("html");
   const [layout, setLayout] = useState("grid");
-  const [columns, setColumns] = useState(3);
+  const [columns, setColumns] = useState("0");
   const [gap, setGap] = useState("0");
   const [flexDirection, setFlexDirection] = useState("");
   const [justifyContent, setJustifyContent] = useState("");
